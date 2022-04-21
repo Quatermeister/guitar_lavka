@@ -379,24 +379,27 @@ a, button{
 
 .main_assortment{
     display: flex;
+    flex-direction: column;
 }
 
 .main_assortment_menu{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    max-width: 1014px;
-    
+    flex-wrap: wrap;
+    width: 1014px;
+    height: 620px;
+    margin-top: 150px;
+    justify-content: space-between;
 }
+
 .main_assortment_menu_item_1{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 500px;
     margin: 10px;
-    background: url("../img/main/menu/guitar.png");
+    background: url("../img/main/menu/guitar.png") center center / cover no-repeat;
     background-color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     color: #fff;
@@ -406,9 +409,9 @@ a, button{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 500px;          
     margin: 10px;
-    background: url("../img/main/menu/ukulele.png");
+    background: url("../img/main/menu/ukulele.png") center center / cover no-repeat;
     background-color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     color: #fff;
@@ -418,9 +421,9 @@ a, button{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 500px;
     margin: 10px;
-    background: url("../img/main/menu/accessories.png");
+    background: url("../img/main/menu/accessories.png") center center / cover no-repeat;
     background-color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     color: #fff;
@@ -430,9 +433,9 @@ a, button{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 500px;
     margin: 10px;
-    background: url("../img/main/menu/strings.jpg");
+    background: url("../img/main/menu/strings.jpg") center center / cover no-repeat;
     background-color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     color: #fff;
