@@ -383,74 +383,47 @@ a, button{
 }
 
 .main_assortment_menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 1014px;
-    height: 620px;
+    display: grid;
+    grid-template:300px 300px /500px 500px;
+    gap: 15px;
+    margin: auto;
     margin-top: 150px;
     justify-content: space-between;
 }
 
-.main_assortment_menu_item_1{
+.main_assortment_menu_item_1, .main_assortment_menu_item_2, .main_assortment_menu_item_3,.main_assortment_menu_item_4{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 500px;
+    width: 100%;
+    height: 100%;
     margin: 10px;
     background: url("../img/main/menu/guitar.png") center center / cover no-repeat;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-size: 14px;
-    color: #fff;
-}
-.main_assortment_menu_item_2{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 500px;          
-    margin: 10px;
-    background: url("../img/main/menu/ukulele.png") center center / cover no-repeat;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-size: 14px;
-    color: #fff;
-}
-.main_assortment_menu_item_3{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 500px;
-    margin: 10px;
-    background: url("../img/main/menu/accessories.png") center center / cover no-repeat;
-    background-color: rgba(0, 0, 0, 0.8);
-    font-size: 14px;
-    color: #fff;
-}
-.main_assortment_menu_item_4{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 500px;
-    margin: 10px;
-    background: url("../img/main/menu/strings.jpg") center center / cover no-repeat;
-    background-color: rgba(0, 0, 0, 0.8);
     font-size: 14px;
     color: #fff;
 }
 
+.main_assortment_menu_item_2{
+    background: url("../img/main/menu/ukulele.png") center center / cover no-repeat;
+}
+.main_assortment_menu_item_3{
+    background: url("../img/main/menu/accessories.png") center center / cover no-repeat;
+}
+.main_assortment_menu_item_4{
+    background: url("../img/main/menu/strings.jpg") center center / cover no-repeat;
+}
+
 .main_assortment_logo{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
+    margin-top: 20px;
     background-color: orange;
 }
-.main_assortment_logo_img{
-    margin: 10px;
+
+.main_assortment_logo .container-small{
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(5, 1fr);
+    place-items: center center;
+    gap: 20px;
 }
 
 
